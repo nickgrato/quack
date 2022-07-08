@@ -15,6 +15,11 @@
   font-weight: $weight;
 }
 
+@mixin secondary-font($weight: 700) {
+  font-family: $secondary-font, $backup-font;
+  font-weight: $weight;
+}
+
 /*-------------------------------
   HEADLINE STYLES
 -------------------------------*/

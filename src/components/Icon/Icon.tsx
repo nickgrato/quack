@@ -26,86 +26,95 @@ const Icon = ({
       strokeLinejoin="round"
       viewBox="0 0 24 24"
     >
+      {name === "activity" ? (
+        <>
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+        </>
+      ) : null}
 
-        {
-          name === 'activity' ? (
-          <> 
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-          </> ): null
-        }
-
-
-        {
-          name === 'airplay' ? (
-          <> 
-           <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
+      {name === "airplay" ? (
+        <>
+          <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
           <polygon points="12 15 17 21 7 21 12 15"></polygon>
-          </> ): null
-        }
+        </>
+      ) : null}
 
+      {name === "alert-circle" ? (
+        <>
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </>
+      ) : null}
 
-        {
-          name === 'alert-circle' ? (
-          <> 
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="8" x2="12" y2="12"></line>
-            <line x1="12" y1="16" x2="12.01" y2="16"></line>
-          </> ): null
-        }
+      {name === "alert-octagon" ? (
+        <>
+          <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </>
+      ) : null}
 
+      {name === "alert-triangle" ? (
+        <>
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+          <line x1="12" y1="9" x2="12" y2="13"></line>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </>
+      ) : null}
 
-        {
-          name === 'alert-octagon' ? (
-          <> 
-            <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
-            <line x1="12" y1="8" x2="12" y2="12"></line>
-            <line x1="12" y1="16" x2="12.01" y2="16"></line>
-          </> ): null
-        }
+      {name === "star" ? (
+        <>
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </>
+      ) : null}
 
-
-         {
-          name === 'alert-triangle' ? (
-          <> 
-            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-            <line x1="12" y1="9" x2="12" y2="13"></line>
-            <line x1="12" y1="17" x2="12.01" y2="17"></line>
-          </> ): null
-        }
-
-
-        
-
-        {/* <symbol id="align-center" viewBox="0 0 24 24">
+      {name === "align-center" ? (
+        <>
           <line x1="18" y1="10" x2="6" y2="10"></line>
           <line x1="21" y1="6" x2="3" y2="6"></line>
           <line x1="21" y1="14" x2="3" y2="14"></line>
           <line x1="18" y1="18" x2="6" y2="18"></line>
-        </symbol>
-        <symbol id="align-justify" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "align-justify" ? (
+        <>
           <line x1="21" y1="10" x2="3" y2="10"></line>
           <line x1="21" y1="6" x2="3" y2="6"></line>
           <line x1="21" y1="14" x2="3" y2="14"></line>
           <line x1="21" y1="18" x2="3" y2="18"></line>
-        </symbol>
-        <symbol id="align-left" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "align-left" ? (
+        <>
           <line x1="17" y1="10" x2="3" y2="10"></line>
           <line x1="21" y1="6" x2="3" y2="6"></line>
           <line x1="21" y1="14" x2="3" y2="14"></line>
           <line x1="17" y1="18" x2="3" y2="18"></line>
-        </symbol>
-        <symbol id="align-right" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "align-right" ? (
+        <>
           <line x1="21" y1="10" x2="7" y2="10"></line>
           <line x1="21" y1="6" x2="3" y2="6"></line>
           <line x1="21" y1="14" x2="3" y2="14"></line>
           <line x1="21" y1="18" x2="7" y2="18"></line>
-        </symbol>
-        <symbol id="anchor" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "anchor" ? (
+        <>
           <circle cx="12" cy="5" r="3"></circle>
           <line x1="12" y1="22" x2="12" y2="8"></line>
           <path d="M5 12H2a10 10 0 0 0 20 0h-3"></path>
-        </symbol>
-        <symbol id="aperture" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "aperture" ? (
+        <>
           <circle cx="12" cy="12" r="10"></circle>
           <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
           <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
@@ -113,166 +122,266 @@ const Icon = ({
           <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
           <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
           <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
-        </symbol>
-        <symbol id="archive" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "archive" ? (
+        <>
           <polyline points="21 8 21 21 3 21 3 8"></polyline>
           <rect x="1" y="3" width="22" height="5"></rect>
           <line x1="10" y1="12" x2="14" y2="12"></line>
-        </symbol>
-        <symbol id="arrow-down-circle" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-down-circle" ? (
+        <>
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="8 12 12 16 16 12"></polyline>
           <line x1="12" y1="8" x2="12" y2="16"></line>
-        </symbol>
-        <symbol id="arrow-down-left" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-down-left" ? (
+        <>
           <line x1="17" y1="7" x2="7" y2="17"></line>
           <polyline points="17 17 7 17 7 7"></polyline>
-        </symbol>
-        <symbol id="arrow-down-right" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-down-right" ? (
+        <>
           <line x1="7" y1="7" x2="17" y2="17"></line>
           <polyline points="17 7 17 17 7 17"></polyline>
-        </symbol>
-        <symbol id="arrow-down" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-down" ? (
+        <>
           <line x1="12" y1="5" x2="12" y2="19"></line>
           <polyline points="19 12 12 19 5 12"></polyline>
-        </symbol>
-        <symbol id="arrow-left-circle" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-left-circle" ? (
+        <>
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 8 8 12 12 16"></polyline>
           <line x1="16" y1="12" x2="8" y2="12"></line>
-        </symbol>
-        <symbol id="arrow-left" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-left" ? (
+        <>
           <line x1="19" y1="12" x2="5" y2="12"></line>
           <polyline points="12 19 5 12 12 5"></polyline>
-        </symbol>
-        <symbol id="arrow-right-circle" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-right-circle" ? (
+        <>
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 16 16 12 12 8"></polyline>
           <line x1="8" y1="12" x2="16" y2="12"></line>
-        </symbol>
-        <symbol id="arrow-right" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-right" ? (
+        <>
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <polyline points="12 5 19 12 12 19"></polyline>
-        </symbol>
-        <symbol id="arrow-up-circle" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-up-circle" ? (
+        <>
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="16 12 12 8 8 12"></polyline>
           <line x1="12" y1="16" x2="12" y2="8"></line>
-        </symbol>
-        <symbol id="arrow-up-left" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-up-left" ? (
+        <>
           <line x1="17" y1="17" x2="7" y2="7"></line>
           <polyline points="7 17 7 7 17 7"></polyline>
-        </symbol>
-        <symbol id="arrow-up-right" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-up-right" ? (
+        <>
           <line x1="7" y1="17" x2="17" y2="7"></line>
           <polyline points="7 7 17 7 17 17"></polyline>
-        </symbol>
-        <symbol id="arrow-up" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "arrow-up" ? (
+        <>
           <line x1="12" y1="19" x2="12" y2="5"></line>
           <polyline points="5 12 12 5 19 12"></polyline>
-        </symbol>
-        <symbol id="at-sign" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "at-sign" ? (
+        <>
           <circle cx="12" cy="12" r="4"></circle>
           <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
-        </symbol>
+        </>
+      ) : null}
 
-        <symbol id="award" viewBox="0 0 24 24">
-
-        {
-          name === 'bar-chart-2' ? (
-          <>
+      {name === "award" ? (
+        <>
           <circle cx="12" cy="8" r="7"></circle>
           <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-        </symbol> 
+        </>
+      ) : null}
 
-        {
-          name === 'bar-chart-2' ? (
-          <>
-            <line x1="18" y1="20" x2="18" y2="10"></line>
-            <line x1="12" y1="20" x2="12" y2="4"></line>
-            <line x1="6" y1="20" x2="6" y2="14"></line>
-          </> ) : null
-        } */}
-       
-          
-        {/* <symbol id="bar-chart" viewBox="0 0 24 24">
+      {name === "bar-chart-2" ? (
+        <>
+          <line x1="18" y1="20" x2="18" y2="10"></line>
+          <line x1="12" y1="20" x2="12" y2="4"></line>
+          <line x1="6" y1="20" x2="6" y2="14"></line>
+        </>
+      ) : null}
+
+      {name === "bar-chart" ? (
+        <>
           <line x1="12" y1="20" x2="12" y2="10"></line>
           <line x1="18" y1="20" x2="18" y2="4"></line>
           <line x1="6" y1="20" x2="6" y2="16"></line>
-        </symbol>
-        <symbol id="battery-charging" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "battery-charging" ? (
+        <>
           <path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"></path>
           <line x1="23" y1="13" x2="23" y2="11"></line>
           <polyline points="11 6 7 12 13 12 9 18"></polyline>
-        </symbol>
-        <symbol id="battery" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "battery" ? (
+        <>
           <rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect>
           <line x1="23" y1="13" x2="23" y2="11"></line>
-        </symbol>
-        <symbol id="bell-off" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "bell-off" ? (
+        <>
           <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
           <path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path>
           <path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path>
           <path d="M18 8a6 6 0 0 0-9.33-5"></path>
           <line x1="1" y1="1" x2="23" y2="23"></line>
-        </symbol>
-        <symbol id="bell" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "bell" ? (
+        <>
           <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
           <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-        </symbol>
-        <symbol id="bluetooth" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "bluetooth" ? (
+        <>
           <polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline>
-        </symbol>
-        <symbol id="bold" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "bold" ? (
+        <>
           <path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path>
           <path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path>
-        </symbol>
-        <symbol id="book-open" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "book-open" ? (
+        <>
           <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
           <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-        </symbol>
-        <symbol id="book" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "book" ? (
+        <>
           <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
           <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-        </symbol>
-        <symbol id="bookmark" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "bookmark" ? (
+        <>
           <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-        </symbol>
-        <symbol id="box" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "box" ? (
+        <>
           <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
           <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
           <line x1="12" y1="22.08" x2="12" y2="12"></line>
-        </symbol>
-        <symbol id="briefcase" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "briefcase" ? (
+        <>
           <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
           <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-        </symbol>
-        <symbol id="calendar" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "calendar" ? (
+        <>
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
           <line x1="16" y1="2" x2="16" y2="6"></line>
           <line x1="8" y1="2" x2="8" y2="6"></line>
           <line x1="3" y1="10" x2="21" y2="10"></line>
-        </symbol>
-        <symbol id="camera-off" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "camera-off" ? (
+        <>
           <line x1="1" y1="1" x2="23" y2="23"></line>
           <path d="M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h4a2 2 0 0 1 2 2v9.34m-7.72-2.06a4 4 0 1 1-5.56-5.56"></path>
-        </symbol>
-        <symbol id="camera" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "camera" ? (
+        <>
           <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
           <circle cx="12" cy="13" r="4"></circle>
-        </symbol>
-        <symbol id="cast" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "cast" ? (
+        <>
           <path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path>
           <line x1="2" y1="20" x2="2.01" y2="20"></line>
-        </symbol>
-        <symbol id="check-circle" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "check-circle" ? (
+        <>
           <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
           <polyline points="22 4 12 14.01 9 11.01"></polyline>
-        </symbol>
-        <symbol id="check-square" viewBox="0 0 24 24">
+        </>
+      ) : null}
+
+      {name === "check-square" ? (
+        <>
           <polyline points="9 11 12 14 22 4"></polyline>
           <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-        </symbol>
+        </>
+      ) : null}
+
+      {/*  
+        
+     
+       
+        
+ 
+  
         <symbol id="check" viewBox="0 0 24 24">
           <polyline points="20 6 9 17 4 12"></polyline>
         </symbol>
@@ -1151,9 +1260,7 @@ const Icon = ({
         <symbol id="square" viewBox="0 0 24 24">
           <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
         </symbol>
-        <symbol id="star" viewBox="0 0 24 24">
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-        </symbol>
+        
         <symbol id="stop-circle" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="10"></circle>
           <rect x="9" y="9" width="6" height="6"></rect>
@@ -1424,7 +1531,7 @@ const Icon = ({
           <circle cx="11" cy="11" r="8"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           <line x1="8" y1="11" x2="14" y2="11"></line>
-        </symbol> */}
+        </symbol>  */}
     </svg>
   )
 }
